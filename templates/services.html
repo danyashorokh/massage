@@ -1,0 +1,44 @@
+
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/Roboto_fonts.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/media.css' %}"> -->
+    <!-- <link rel="icon" type="image/png" href="{% static 'imgs/Favicon.png' %}" /> -->
+</head>
+
+<div class="wrap">
+
+
+
+            <div>
+
+                {% for s in services %}
+                    <li>
+                       <!-- <a href="/services/{{ forloop.counter0 }}">{{ s.name }}</a> -->
+                       <a href="/services/{{ s.id }}">{{ s.name }}</a>
+                    </li>
+                {% endfor %}
+        
+            </div>
+
+
+        </main>
+        <footer>
+            
+        </footer>
+
+    </div>
+</div>
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="{% static 'js/swiper.jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script> -->
+
+ {% endblock %}

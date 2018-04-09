@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/Roboto_fonts.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/media.css' %}"> -->
+    <!-- <link rel="icon" type="image/png" href="{% static 'imgs/Favicon.png' %}" /> -->
+
+</head>
+
+<body>
+    <div id="bg">
+
+        <header>
+            <div class="wrap">
+
+               <!--  <div id="first-line">
+
+                    
+                </div> -->
+
+                <div id="second-line">
+   
+                </div>
+                <div id="search" class="left" style = "">
+                    <form action="/service/find">
+                        <p>
+                            <input name="find" type="search" placeholder="Search">
+                        </p>
+                        <div class="icon">
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+
+                <div id="post" class="right">
+                    <a target="_blank" href="https://www.google.ru/">Google</a>
+                </div>
+            </div>
+
+        </header>
+
+        <nav style = "margin-top: 20px">
+            <div class="wrap">
+                <div class="drop relative">{% if active == 'catalog' %}
+                    <a class="active" href="/services">Services</a> {% else %}
+                    <a href="/services">Services</a> {% endif %}
+                    <ul class="absolute">
+                        {% for s in services %}
+                        <li>
+                           <!-- <a href="/services/{{ forloop.counter0 }}">{{ s.name }}</a> -->
+                           <a href="/services/{{ s.id }}">{{ s.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+                {% if active == 'history' %}
+                <a class="active" href="/history">History</a> {% else %}
+                <a href="/history">History</a> {% endif %}
+
+                {% if active == 'promo' %}
+                <a class="active" href="/promo">Promo</a> {% else %}
+                <a href="/promo">Promo</a> {% endif %}
+
+                {% if active == 'contacts' %}
+                <a style="margin:0;" class="active" href="/contacts">Contacts</a> {% else %}
+                <a style="margin:0;" href="/contacts">Contacts</a>{% endif %}
+            </div>
+
+        </nav>
+        <main>
+
+
+
+        </main>
+        <footer>
+            
+        </footer>
+
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="{% static 'js/swiper.jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script> -->
+   
+
+</body>
+
+</html>
