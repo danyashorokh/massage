@@ -13,6 +13,10 @@
 
 </head>
 
+<!-- http://nisnom.com/kollektsiya-potryasayushhih-menyu-dlya-sajta-html-css-i-javascript-jquery/ -->
+
+<!-- http://nisnom.com/veb-razrabotki/8-vdohnovlyayushhih-effektov-pri-navedenii-na-ssylki-menyu/ -->
+
 <body>
     <div id="bg">
 
@@ -47,9 +51,10 @@
 
         <nav style = "margin-top: 20px">
             <div class="wrap">
-                <div class="drop relative">{% if active == 'catalog' %}
-                    <a class="active" href="/services">Services</a> {% else %}
-                    <a href="/services">Services</a> {% endif %}
+                <div class="drop relative">{% if active == 'services' %}
+                    <a class="active" href="/services/">Services</a> {% else %}
+                    <a href="/services/">Services</a> {% endif %}
+                    
                     <ul class="absolute">
                         {% for s in services %}
                         <li>
@@ -61,25 +66,50 @@
 
                 </div>
                 {% if active == 'history' %}
-                <a class="active" href="/history">History</a> {% else %}
-                <a href="/history">History</a> {% endif %}
+                <a class="active" href="/history/">History</a> {% else %}
+                <a href="/history/">History</a> {% endif %}
 
                 {% if active == 'promo' %}
-                <a class="active" href="/promo">Promo</a> {% else %}
-                <a href="/promo">Promo</a> {% endif %}
+                <a class="active" href="/promo/">Promo</a> {% else %}
+                <a href="/promo/">Promo</a> {% endif %}
 
                 {% if active == 'contacts' %}
-                <a style="margin:0;" class="active" href="/contacts">Contacts</a> {% else %}
-                <a style="margin:0;" href="/contacts">Contacts</a>{% endif %}
+                <a style="margin:0;" class="active" href="/contacts/">Contacts</a> {% else %}
+                <a style="margin:0;" href="/contacts/">Contacts</a>{% endif %}
             </div>
 
         </nav>
         <main>
+            <div class="wrap">
+                
+                {% block content %} 
+                {% endblock %}
 
-
-
+     
+            </div>
         </main>
+
+        
+
         <footer>
+
+
+            <div class="wrap relative">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6727.828849094221!2d37.44625756897628!3d55.756009289097015!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523370331805" width="300" height="100" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+
+                <div class="logo"></div>
+                <p>All Rights Reserved</p>
+                <p>2018&nbsp;—&nbsp;<span class="year">{% now "Y" %}</span></p>
+                <div class="absolute socials">
+                    <b></b>
+                    <br>
+                    <a target="_blank" href="https://www.instagram.com/danyashorokh/"><img src="{% static 'imgs/inst.png' %}" alt="" class="social"></a>
+                    <a target="_blank" href="https://facebook.com/"><img src="{% static 'imgs/fb.png' %}" alt="" class="social"></a>
+                </div>
+               
+            </div>
             
         </footer>
 

@@ -1,7 +1,4 @@
-
-{% extends 'index.html' %}
-{% load staticfiles %}
-{% block content %}
+{% extends 'index.html' %} {% load staticfiles %} {% block content %}
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +12,11 @@
 
 <div class="wrap">
 
+
             <div>
 
-                {% for s in services %}
-                    <li>
-                       <a href="/services/{{ s.id }}">{{ s.name }}</a>
-                    </li>
-                {% endfor %}
-        
+                <p>Some contacts</p>
+                
             </div>
 
 

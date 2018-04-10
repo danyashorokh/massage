@@ -31,6 +31,18 @@ urlpatterns = [
     url(r'^services/$', views.services),
     url(r'^services/(\w+)', views.service),
 
-    # url(r'^service/(\w+)$', views.service),
+    url(r'^history/$', views.history),
+    url(r'^contacts/$', views.history),
+    url(r'^promo/$', views.promo),
 
+    url(r'^not_found\/?$', views.not_found),
+
+    url(r'^service\/?', include('service.urls')),
+
+
+
+    # url(r'^service/(\w+)$', views.service),
+  
 ]
+
+urlpatterns.append(url(r'^.*$', views.page404))

@@ -97,106 +97,6 @@ header {
     padding: 15px 0;
 }
 
-#cart-wrap,
-#login {
-    width: 185px;
-    height: 73px;
-    display: inline-block;
-    margin-top: 8px;
-    position: relative;
-    margin-left: 10px;
-}
-
-#login {
-    top: 0px;
-    margin-top: 0;
-    position: relative;
-}
-
-#login div {
-    display: inline-block;
-    width: 160px;
-    height: 100%;
-    margin-left: 20px;
-    border: 1px solid #818181;
-    background: #d7d7d7;
-    color: #817f7f;
-    text-align: center;
-}
-
-#login div p {
-    position: relative;
-}
-
-#login div p:nth-of-type(1) {
-    top: 10px;
-    max-width: 160px;
-    overflow: hidden;
-}
-
-#login div p:nth-of-type(2) {
-    top: 20px;
-}
-
-#login div a {
-    text-decoration: none;
-    color: #777;
-    display: inline-block;
-    position: relative;
-    border-bottom: 1px dashed transparent;
-    transition: border .18s;
-}
-
-#login div a:hover {
-    border-bottom-color: #777;
-}
-
-#login div.login-inputs {
-    background: none;
-    margin: 0;
-    width: 100%;
-    color: inherit;
-    text-align: inherit;
-    background: #d7d7d7;
-    border: none;
-    height: unset;
-    border: 1px solid #818181;
-    margin-top: -2px;
-    position: relative;
-    top: 2px;
-}
-
-#login div.login-inputs input {
-    width: calc(100% - 10px);
-    outline: none;
-    border: none;
-    color: #817f7f;
-    padding: 2px 5px;
-    border-radius: 0;
-    -webkit-appearance: none;
-    background: transparent;
-}
-
-#login div.login-inputs input:first-child {
-    position: relative;
-    border-bottom: 1px solid #818181;
-}
-
-#login div.login-inputs input::-webkit-input-placeholder {
-    font-style: italic;
-}
-
-#login div.login-inputs input::-moz-placeholder {
-    font-style: italic;
-}
-
-#login div.login-inputs input:-moz-placeholder {
-    font-style: italic;
-}
-
-#login div.login-inputs input:-ms-input-placeholder {
-    font-style: italic;
-}
 
 .logo {
     background: url(../imgs/logo.png) no-repeat;
@@ -209,20 +109,7 @@ header .logo {
     height: 95px;
 }
 
-#cart-wrap #cart {
-    height: 42px;
-    width: 100%;
-    border: 1px solid #818181;
-    background: #d7d7d7;
-    color: #817f7f;
-    text-align: center;
-    cursor: pointer;
-    transition: color .13s;
-}
 
-#cart-wrap #cart:hover {
-    color: #444;
-}
 
 .btn {
     background: #00b2ee;
@@ -284,15 +171,6 @@ header .logo {
 }*/
 
 
-#cart-wrap .btn {
-    position: absolute;
-    bottom: 0;
-}
-
-#login .btn {
-    position: absolute;
-    bottom: 0;
-}
 
 #second-line a {
     color: #000;
@@ -522,29 +400,6 @@ header + nav a:active,
 
 /****** internet explorer ******/
 
-* + html #login {
-    top: 0px;
-}
-
-* + html #login div {
-    position: relative;
-    top: 20px;
-    margin-top: -12px;
-}
-
-* + html #login .btn {
-    position: relative;
-    bottom: -5px;
-}
-
-* + html #login .btn:nth-of-type(1) {
-    float: left;
-}
-
-* + html #login .btn:nth-of-type(2) {
-    float: right;
-}
-
 * + html #left,
 #right {
     height: 25px;
@@ -566,24 +421,7 @@ header + nav a:active,
 }
 
 @media \0screen {
-    #login {
-        top: 0px;
-    }
-    #login div {
-        position: relative;
-        top: 20px;
-        margin-top: -12px;
-    }
-    #login .btn {
-        position: relative;
-        bottom: -5px;
-    }
-    #login .btn:nth-of-type(1) {
-        float: left;
-    }
-    #login .btn:nth-of-type(2) {
-        float: right;
-    }
+    
     #left,
     #right {
         height: 25px;
@@ -606,24 +444,7 @@ header + nav a:active,
 
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
-    #login {
-        top: 0px;
-    }
-    #login div {
-        position: relative;
-        top: 20px;
-        margin-top: -12px;
-    }
-    #login .btn {
-        position: relative;
-        bottom: -5px;
-    }
-    #login .btn:nth-of-type(1) {
-        float: left;
-    }
-    #login .btn:nth-of-type(2) {
-        float: right;
-    }
+    
     #left,
     #right {
         height: 25px;
@@ -647,24 +468,6 @@ header + nav a:active,
 
 /*************/
 
-#login div a.forget {
-    position: absolute;
-    top: 25px;
-    font-size: .75em;
-    right: 4px;
-    font-style: italic;
-    border: none;
-    transition: color .13s;
-}
-
-#login div a.forget:hover {
-    border: none;
-    color: #007dd9;
-}
-
-.w49 {
-    width: 49%;
-}
 
 .cost {
     color: red;
@@ -902,67 +705,6 @@ a.sort.active.ascending::after {
     transform: scaleX(-1);
 }
 
-#cart-table {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#cart-table th {
-    font-weight: 200;
-    font-size: 1.4em;
-}
-
-#cart-table th,
-#cart-table td {
-    border: 1px solid #000;
-    border-left: none;
-    border-bottom: none;
-    text-align: center;
-    padding: 10px;
-    vertical-align: middle;
-}
-
-#cart-table th:last-child,
-#cart-table td:last-child {
-    border-right: none;
-    border-left: none;
-}
-
-#cart-table td:first-child span {
-    position: relative;
-    top: 30px;
-    margin-left: 100px;
-    display: block;
-    width: 350px;
-    margin-bottom: 40px;
-}
-
-#cart-table td:first-child {
-    text-align: left;
-}
-
-/*#cart-table tr:nth-of-type(2) td {
-    border-top: 1px solid #000;
-}*/
-
-#cart-table td {
-    border-top: 1px solid #aeaeae;
-}
-
-#cart-table + .right {
-    height: 50px;
-    position: relative;
-    /*left: -420px;*/
-}
-
-#cart-table + .right .btn {
-    width: 200px;
-    /*position: absolute;*/
-}
-
-#cart-table + .right a.btn:nth-of-type(2) {
-    left: 220px;
-}
 
 .relative {
     position: relative;
@@ -994,34 +736,7 @@ a.sort.active.ascending::after {
     color: red;
 }
 
-#cart-table input,
-.quant {
-    width: 30px;
-    text-align: center;
-    outline: none;
-    border: 1px solid #aeaeae;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 4px;
-    padding: 2px;
-    transition: background .3s;
-    
-  /*  position: absolute;
-    bottom: -20px;*/
-}
 
-#cart-table tr:first-child {
-    height: inherit;
-}
-
-#cart-table tr {
-    height: 105px;
-}
-
-#cart-table tr:last-child td {
-    /*border: none;*/
-    font-size: 1.2em;
-    border-bottom: 1px solid black;
-}
 
 
 .minus,
@@ -1046,41 +761,6 @@ a.sort.active.ascending::after {
 
 .quant {
     width: 100px;
-}
-
-#cart-table td:nth-child(5) span {
-    border-radius: 5px;
-    transition: all .13s;
-    color: #a7afc0;
-    width: 50px;
-    line-height: 30px;
-    font-size: 1.5em;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#cart-table td:nth-child(5) span:hover {
-    background: rgba(167, 175, 192, .2)
-}
-
-#cart-table td:nth-child(5)::selection,
-.minus::selection,
-.plus::selection {
-    background: transparent;
-}
-
-#cart-table td:nth-child(5) input::selection {
-    background: rgba(167, 175, 192, .2)
-}
-
-#cart-table td:nth-child(5)::-moz-selection,
-.minus::-moz-selection,
-.plus::-moz-selection {
-    background: transparent;
-}
-
-#cart-table td:nth-child(5) input::-moz-selection {
-    background: rgba(167, 175, 192, .2)
 }
 
 .c4 {
@@ -1132,27 +812,6 @@ a.sort.active.ascending::after {
     border: 1px solid #aeaeae;
     border-radius: 4px;
     position: relative;
-}
-
-.delivery:hover {
-    margin-top: 20px;
-}
-
-.delivery h3 {
-    background: #00b2ee;
-    background: -moz-linear-gradient(top, #00b2ee 0%, #007dd9 100%);
-    background: -webkit-linear-gradient(top, #00b2ee 0%, #007dd9 100%);
-    background: linear-gradient(to bottom, #00b2ee 0%, #007dd9 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00b2ee', endColorstr='#007dd9', GradientType=0);
-    color: #fff;
-    line-height: 80px;
-    font-weight: 500;
-    font-size: 1.5em;
-    width: calc(100% + 2px);
-    margin-left: -1px;
-    margin-top: -1px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 .underline {
@@ -1401,76 +1060,7 @@ table.profile tr td:nth-child(2) input:nth-child(1) {
     position: relative;
 }
 
-form#new-address {
-    background: #eaeaea;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    display: none;
-}
 
-form#new-address table {
-    width: 70%;
-    margin: 0 auto;
-}
-
-form#new-address table tr td:first-child {
-    font-weight: 700;
-}
-
-form#new-address table tr td input {
-    width: 100%;
-    background: #d7d7d7;
-    width: calc(100% - 10px);
-    outline: none;
-    color: #817f7f;
-    padding: 2px 5px;
-    border-radius: 0;
-    -webkit-appearance: none;
-    border: 1px solid #818181;
-    margin-top: 10px;
-    position: relative;
-    top: -5px;
-    transition: all .3s;
-}
-
-form#new-address table tr td input::-webkit-input-placeholder {
-    font-style: italic;
-}
-
-form#new-address table tr td input::-moz-placeholder {
-    font-style: italic;
-}
-
-form#new-address table tr td input:-moz-placeholder {
-    font-style: italic;
-}
-
-form#new-address table tr td input:-ms-input-placeholder {
-    font-style: italic;
-}
-
-form#new-address table tr td input.error::-webkit-input-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#new-address table tr td input.error::-moz-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#new-address table tr td input.error:-moz-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#new-address table tr td input.error:-ms-input-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
 
 .fake {
     margin-bottom: 20px;
@@ -1787,54 +1377,17 @@ form#confirm table tr td input:-ms-input-placeholder {
     color: #fff !important;
 }
 
-.address-wrap {
-    position: relative;
-}
-
-.edit-address {
-    color: red;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-}
-
-.edit-address b {
-    cursor: pointer;
-}
 
 .first {
     margin-right: 30px;
     color: #000;
 }
 
-.edit-address b:hover {
-    text-decoration: underline;
-}
-
 select[name=status] {
     margin-bottom: 30px;
 }
 
-form#edit-address {
-    background: #eaeaea;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    display: none;
-    position: relative;
-    top: -290px;
-}
 
-form#edit-address table {
-    width: 70%;
-    margin: 0 auto;
-}
-
-form#edit-address table tr td:first-child {
-    font-weight: 700;
-}
 
 form#edit-address table tr td input {
     width: 100%;
@@ -1852,103 +1405,6 @@ form#edit-address table tr td input {
     transition: all .3s;
 }
 
-form#edit-address table tr td input::-webkit-input-placeholder {
-    font-style: italic;
-}
-
-form#edit-address table tr td input::-moz-placeholder {
-    font-style: italic;
-}
-
-form#edit-address table tr td input:-moz-placeholder {
-    font-style: italic;
-}
-
-form#edit-address table tr td input:-ms-input-placeholder {
-    font-style: italic;
-}
-
-form#edit-address table tr td input.error::-webkit-input-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#edit-address table tr td input.error::-moz-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#edit-address table tr td input.error:-moz-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-form#edit-address table tr td input.error:-ms-input-placeholder {
-    font-style: italic;
-    color: #fff !important;
-}
-
-#cart-table td img.left {
-    /*width: 80px;*/
-    height: 80px;
-}
-
-.login-error {
-    color: red;
-    font-size: .9em;
-    margin-bottom: 10px;
-}
-
-form#login-user {
-    display: block;
-    width: 300px;
-    margin: 0 auto;
-    border: 5px solid transparent;
-    transition: all .3s;
-    padding: 20px;
-    min-height: 100px;
-}
-
-form#login-user div {
-    background: none;
-    margin: 0;
-    width: 100%;
-    color: inherit;
-    text-align: inherit;
-    border: none;
-    height: unset;
-    margin-top: -2px;
-}
-
-form#login-user div input {
-    background: #d7d7d7;
-    width: calc(100% - 10px);
-    outline: none;
-    border: none;
-    color: #817f7f;
-    padding: 2px 5px;
-    border-radius: 0;
-    -webkit-appearance: none;
-    border: 1px solid #818181;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-form#login-user div input::-webkit-input-placeholder {
-    font-style: italic;
-}
-
-form#login-user div input::-moz-placeholder {
-    font-style: italic;
-}
-
-form#login-user div input:-moz-placeholder {
-    font-style: italic;
-}
-
-form#login-user div input:-ms-input-placeholder {
-    font-style: italic;
-}
 
 b.edit-category,
 b.delete-category {
@@ -2066,7 +1522,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .socials {
     top: 0;
-    left: 400px;
+    right: 0;
 }
 
 .social {
@@ -2161,42 +1617,6 @@ input[type="search"]::-webkit-search-cancel-button {
     left: 389px;
 }
 
-#cart-table tr.coupon {
-    height: inherit;
-}
-
-#cart-table tr.coupon td {
-    /*border: none;*/
-    /*border-top: 1px solid #000;*/
-}
-
-#post {
-    margin-top: 10px;
-    display: inline-block;
-    position: relative;
-    margin-right: 17px;
-}
-
-#post a {
-    text-decoration: none;
-    position: relative;
-}
-
-#post a:hover {
-    text-decoration: underline;
-}
-
-#post a::after {
-    content: '';
-    background: url(../imgs/post.jpg);
-    width: 61px;
-    height: 29px;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    top: -5px;
-    left: -70px;
-}
 
 .baner {
     height: 400px;
@@ -2214,39 +1634,6 @@ input[type="search"]::-webkit-search-cancel-button {
     text-align: center;
     font-weight: 500;
     text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000, 0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
-}
-
-.customer {
-    display: inline-block;
-    width: 310px;
-    height: 140px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.customer .img-outer {
-    width: 150px;
-    height: 140px;
-    border-radius: 100%;
-    margin-right: 20px;
-    float: left;
-    overflow: hidden;
-}
-
-.customer .img-outer img {
-    width: 150px;
-    min-height: 140px;
-}
-
-.customer span {
-    position: absolute;
-    top: 50%;
-    font-weight: bold;
-}
-
-.customer:nth-of-type(3n) {
-    margin-right: 0;
 }
 
 .mt20 ul {
@@ -2505,20 +1892,6 @@ label {
     color: red;
     font-size: 20px;
     text-align: center;
-}
-
-.to-cart{
-    width: 520px;
-    margin: 0 auto;
-}
-
-.to-cart__price{
-    padding-top: 0;
-}
-
-#vk_comments,
-#vk_comments iframe{
-    width: 100% !important;
 }
 
 

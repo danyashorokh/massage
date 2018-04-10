@@ -7,7 +7,8 @@ from django.views.generic import TemplateView
 
 from . import views
 
-# urlpatterns = [
-#     url(r'^', views.index),
-#     url(r'^services/(\w+)', views.service),
-# ]
+urlpatterns = [
+#   url(r'^', views.index),
+#   url(r'^services/(\w+)', views.service),
+	url(r'find\/?$', views.find),
+]
